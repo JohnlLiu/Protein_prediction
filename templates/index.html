@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protein Prediction</title>
+</head>
+<body>
+    <header>
+        <h1>Protein Structure Predictor</h1>
+    </header>
+    <main>
+        <p>Enter a protein string sequence below</p>
+        <form method="POST">
+            <textarea id="user_input" name="user_input" rows="8" cols="50" value="{{ user_input }}"></textarea>
+            <br>
+            <button type="submit">Predict</button>
+        </form>
+        <!-- Display the user's input -->
+        {% if user_input %}
+        <p>You entered: {{ user_input }}</p>
+        {% endif %}
+
+        <!-- Display the result -->
+        {% if result %}
+        <p>Result: {{ result }}</p>
+        {% endif %}
+    </main>
+    <footer>
+        <p>&copy; 2023 My Flask App</p>
+    </footer>
+</body>
+</html>
