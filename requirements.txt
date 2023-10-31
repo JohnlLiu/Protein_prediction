@@ -1,0 +1,3 @@
+biotite
+py3Dmol
+stmol==0.0.9
